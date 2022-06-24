@@ -1,0 +1,33 @@
+@use '../variables/variables' as *;
+.header{
+    background-color: red;
+    width:100%;
+    font-size: 16px;
+    font-family: "arial";
+    font-weight: bold;
+
+    .container{
+        @extend .container;
+        .header-logo{
+            width:8%;
+        }
+        .header-list{
+            list-style: none;
+            display:flex;
+            .header-item{
+                padding: 0px 22px;
+                a{
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+        }
+        .header-btn{
+            @extend .btn;
+        }
+    }
+}
+
+
+
+

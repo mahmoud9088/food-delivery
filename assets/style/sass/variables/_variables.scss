@@ -1,0 +1,18 @@
+$button_color: #FDCB35;
+
+.container {
+        background-color: crimson;
+        display:flex;
+        padding:15px 0;
+        justify-content: space-between;
+        align-items: center;
+        width:75%;
+        margin:auto;
+}
+
+.btn{
+    padding:18px 34px;
+    border-radius: 25px;
+    border:none;
+    background-color: $button_color
+}

@@ -1,0 +1,63 @@
+.container, .home .home-container, .header .container {
+  background-color: crimson;
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+}
+
+.btn, .home .home-container .home-left .home-btn, .header .container .header-btn {
+  padding: 18px 34px;
+  border-radius: 25px;
+  border: none;
+  background-color: #FDCB35;
+}
+
+.header {
+  background-color: red;
+  width: 100%;
+  font-size: 16px;
+  font-family: "arial";
+  font-weight: bold;
+}
+.header .container .header-logo {
+  width: 8%;
+}
+.header .container .header-list {
+  list-style: none;
+  display: flex;
+}
+.header .container .header-list .header-item {
+  padding: 0px 22px;
+}
+.header .container .header-list .header-item a {
+  color: #000;
+  text-decoration: none;
+}
+.home {
+  margin-top: 50px;
+  height: 100vh;
+  padding: 50px;
+}
+.home .home-container .home-left .home-title {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+.home .home-container .home-left .home-paragraph {
+  font-size: 16px;
+  width: 280px;
+  margin-bottom: 25px;
+}
+.home .home-container .home-right .home-svg {
+  fill: #FDCB35;
+  width: 540px;
+}
+
+* {
+  font-family: "arial";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

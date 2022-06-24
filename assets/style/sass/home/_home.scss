@@ -1,0 +1,33 @@
+// import variables
+@use '../variables/variables' as *;
+
+.home{
+    margin-top: 50px;
+    height:100vh;
+    padding:50px;
+    .home-container{
+        @extend .container;
+        .home-left{
+            .home-title{
+                font-size:48px;
+                margin-bottom: 25px;
+            }
+            .home-paragraph{
+                font-size: 16px;
+                width:280px;
+                margin-bottom: 25px;
+
+            }
+            .home-btn{
+                @extend .btn;
+            }
+
+        }
+        .home-right{
+            .home-svg{
+                fill : $button_color;
+                width:540px
+            }
+        }
+    }
+}
