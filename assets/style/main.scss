@@ -4,10 +4,13 @@
 @use './sass/header/header';
 // import home 
 @use './sass/home/home';
+// import about
+@use './sass/about/about';
 
 * {
     font-family:'arial';
     padding:0;
     margin:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }

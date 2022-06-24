@@ -5,7 +5,8 @@
     font-size: 16px;
     font-family: "arial";
     font-weight: bold;
-
+    position:fixed;
+    top:0;
     .container{
         @extend .container;
         .header-logo{
@@ -16,7 +17,7 @@
             display:flex;
             .header-item{
                 padding: 0px 22px;
-                a{
+                a {
                     color: #000;
                     text-decoration: none;
                 }

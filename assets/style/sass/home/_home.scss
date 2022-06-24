@@ -2,12 +2,12 @@
 @use '../variables/variables' as *;
 
 .home{
-    margin-top: 50px;
-    height:100vh;
-    padding:50px;
+    @extend .section-padding-height;
     .home-container{
         @extend .container;
-        .home-left{
+        $avg_direction : 'right';
+        $text_direction : 'left' ;
+        .home-#{$text_direction}{
             .home-title{
                 font-size:48px;
                 margin-bottom: 25px;
@@ -23,7 +23,7 @@
             }
 
         }
-        .home-right{
+        .home-#{$avg_direction}{
             .home-svg{
                 fill : $button_color;
                 width:540px

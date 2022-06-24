@@ -1,5 +1,10 @@
 $button_color: #FDCB35;
-
+$avg_direction : '';
+$text_direction : '' ;
+.section-padding-height{
+    height: 100vh;
+    padding:200px 0 150px 0;
+}
 .container {
         background-color: crimson;
         display:flex;

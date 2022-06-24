@@ -1,4 +1,9 @@
-.container, .home .home-container, .header .container {
+.section-padding-height, .about, .home {
+  height: 100vh;
+  padding: 200px 0 150px 0;
+}
+
+.container, .about .about1-container, .about .about2-container, .home .home-container, .header .container {
   background-color: crimson;
   display: flex;
   padding: 15px 0;
@@ -21,6 +26,8 @@
   font-size: 16px;
   font-family: "arial";
   font-weight: bold;
+  position: fixed;
+  top: 0;
 }
 .header .container .header-logo {
   width: 8%;
@@ -36,11 +43,6 @@
   color: #000;
   text-decoration: none;
 }
-.home {
-  margin-top: 50px;
-  height: 100vh;
-  padding: 50px;
-}
 .home .home-container .home-left .home-title {
   font-size: 48px;
   margin-bottom: 25px;
@@ -55,9 +57,34 @@
   width: 540px;
 }
 
+.about .about1-container, .about .about2-container {
+  margin-bottom: 100px;
+  justify-content: flex-start;
+}
+.about .about1-container .about-left .about-svg, .about .about2-container .about-left .about-svg {
+  fill: #FDCB35;
+  width: 470px;
+}
+.about .about1-container .about-right, .about .about2-container .about-right {
+  margin-left: 80px;
+}
+.about .about1-container .about-right .about-title, .about .about2-container .about-right .about-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.about .about1-container .about-right .about-paragraph, .about .about2-container .about-right .about-paragraph {
+  font-size: 16px;
+  width: 340px;
+  margin-top: 25px;
+}
+.about .about2-container {
+  margin-top: 20px;
+}
+
 * {
   font-family: "arial";
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=main.css.map */
