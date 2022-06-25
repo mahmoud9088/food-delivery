@@ -1,13 +1,14 @@
 @use '../variables/variables' as *;
 .header{
-    background-color: red;
+    background-color: white;
     width:100%;
     font-size: 16px;
     font-family: "arial";
     font-weight: bold;
     position:fixed;
     top:0;
-    .container{
+    @extend .align-container-center;
+    .header-container{
         @extend .container;
         .header-logo{
             width:8%;
@@ -27,6 +28,35 @@
             @extend .btn;
         }
     }
+}
+
+
+@media(max-width : 1206px){
+    .header{
+        font-size: 13px;
+        .header-container{
+            .header-btn{
+                padding:14px 25px;
+            }
+        }
+    }
+
+}
+
+@media(max-width:967px){
+    .header{.header-container{
+        width:90%;
+    }}
+    
+}
+
+@media(max-width:770px){
+    .header{.header-container{
+        .header-list{
+            display: none;
+        }
+    }}
+
 }
 
 

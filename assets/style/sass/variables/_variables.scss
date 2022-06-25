@@ -1,18 +1,15 @@
 $button_color: #FDCB35;
 $avg_direction : '';
 $text_direction : '' ;
-.section-padding-height{
-    height: 100vh;
-    padding:200px 0 150px 0;
-}
+
 .container {
-        background-color: crimson;
+        //background-color: crimson;
         display:flex;
         padding:15px 0;
         justify-content: space-between;
         align-items: center;
         width:75%;
-        margin:auto;
+        
 }
 
 .btn{
@@ -20,4 +17,10 @@ $text_direction : '' ;
     border-radius: 25px;
     border:none;
     background-color: $button_color
+}
+
+.align-container-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }

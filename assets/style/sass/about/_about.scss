@@ -2,22 +2,26 @@
 @use '../variables/variables' as *;
 
 .about{ 
-    @extend .section-padding-height;
+    @extend .align-container-center;
+    padding:120px 0 0 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow:hidden;
     .about1-container{
         @extend .container;
         margin-bottom: 100px;
         justify-content:flex-start;
+        gap:80px;
         $avg_direction : 'left';
         $text_direction : 'right' ;
         .about-#{$avg_direction}{
             .about-svg{
                 fill : $button_color;
-                width:470px
+                width:470px;
             }
 
         }
         .about-#{$text_direction}{
-            margin-left:80px;
             .about-title{
                 font-size:28px;
                 margin-bottom: 10px;

@@ -1,27 +1,26 @@
-.section-padding-height, .about, .home {
-  height: 100vh;
-  padding: 200px 0 150px 0;
-}
-
-.container, .about .about1-container, .about .about2-container, .home .home-container, .header .container {
-  background-color: crimson;
+.container, .services .services-container, .about .about1-container, .about .about2-container, .home .home-container, .header .header-container {
   display: flex;
   padding: 15px 0;
   justify-content: space-between;
   align-items: center;
   width: 75%;
-  margin: auto;
 }
 
-.btn, .home .home-container .home-left .home-btn, .header .container .header-btn {
+.btn, .home .home-container .home-left .home-btn, .header .header-container .header-btn {
   padding: 18px 34px;
   border-radius: 25px;
   border: none;
   background-color: #FDCB35;
 }
 
+.align-container-center, .services, .about, .home, .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
-  background-color: red;
+  background-color: white;
   width: 100%;
   font-size: 16px;
   font-family: "arial";
@@ -29,19 +28,43 @@
   position: fixed;
   top: 0;
 }
-.header .container .header-logo {
+.header .header-container .header-logo {
   width: 8%;
 }
-.header .container .header-list {
+.header .header-container .header-list {
   list-style: none;
   display: flex;
 }
-.header .container .header-list .header-item {
+.header .header-container .header-list .header-item {
   padding: 0px 22px;
 }
-.header .container .header-list .header-item a {
+.header .header-container .header-list .header-item a {
   color: #000;
   text-decoration: none;
+}
+@media (max-width: 1206px) {
+  .header {
+    font-size: 13px;
+  }
+  .header .header-container .header-btn {
+    padding: 14px 25px;
+  }
+}
+@media (max-width: 967px) {
+  .header .header-container {
+    width: 90%;
+  }
+}
+@media (max-width: 770px) {
+  .header .header-container .header-list {
+    display: none;
+  }
+}
+.home {
+  width: 100%;
+  padding: 150px 0 0 0;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .home .home-container .home-left .home-title {
   font-size: 48px;
@@ -57,16 +80,35 @@
   width: 540px;
 }
 
+@media (max-width: 1206px) {
+  .home .home-container .home-left .home-title {
+    font-size: 35px;
+  }
+  .home .home-container .home-left .home-paragraph {
+    font-size: 13px;
+    width: 280px;
+  }
+  .home .home-container .home-left .home-btn {
+    padding: 14px 25px;
+  }
+  .home .home-container .home-right .home-svg {
+    width: 400px;
+  }
+}
+.about {
+  padding: 120px 0 0 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
 .about .about1-container, .about .about2-container {
   margin-bottom: 100px;
   justify-content: flex-start;
+  gap: 80px;
 }
 .about .about1-container .about-left .about-svg, .about .about2-container .about-left .about-svg {
   fill: #FDCB35;
   width: 470px;
-}
-.about .about1-container .about-right, .about .about2-container .about-right {
-  margin-left: 80px;
 }
 .about .about1-container .about-right .about-title, .about .about2-container .about-right .about-title {
   font-size: 28px;
@@ -81,10 +123,65 @@
   margin-top: 20px;
 }
 
+.services {
+  width: 100%;
+  padding: 150px 0 0 0;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.services .services-container {
+  flex-direction: column;
+}
+.services .services-container .services-title {
+  width: 250px;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.services .services-container .services-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.services .services-container .services-boxes .service-box {
+  width: 30%;
+  padding: 32px 24px;
+  text-align: center;
+}
+.services .services-container .services-boxes .service-box .box-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.services .services-container .services-boxes .service-box .service-svg {
+  fill: #FDCB35;
+  width: 135px;
+  margin-bottom: 20px;
+}
+.services .services-container .services-boxes .service-box .box-paragraph {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.services .services-container .services-boxes .service-box .box-btn {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 * {
-  font-family: "arial";
+  font-family: "Poppins , sans-serif";
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+html {
+  height: 10000px;
+  width: 100vw;
+}
+
+body {
+  height: 10000px;
+  width: 100vw;
 }/*# sourceMappingURL=main.css.map */

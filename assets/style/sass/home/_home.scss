@@ -2,7 +2,12 @@
 @use '../variables/variables' as *;
 
 .home{
-    @extend .section-padding-height;
+    //background-color: black;
+    width:100%;
+    @extend .align-container-center;
+    padding:150px 0 0 0;
+    flex-wrap: wrap;
+    overflow:hidden;
     .home-container{
         @extend .container;
         $avg_direction : 'right';
@@ -26,8 +31,42 @@
         .home-#{$avg_direction}{
             .home-svg{
                 fill : $button_color;
-                width:540px
+                width:540px;
             }
         }
     }
+}
+
+@media(max-width : 1206px){
+    .home{
+    .home-container{
+        $avg_direction : 'right';
+        $text_direction : 'left' ;
+        .home-#{$text_direction}{
+            .home-title{
+                font-size:35px;
+            }
+            .home-paragraph{
+                font-size: 13px;
+                width:280px;
+
+            }
+            .home-btn{
+                padding:14px 25px;
+            }
+    }
+    .home-#{$avg_direction}{
+        .home-svg{
+            width:400px;
+        }
+    }
+    }
+
+}}
+
+@media(max-width:914px){
+
+}
+@media(max-width:770px){
+
 }
