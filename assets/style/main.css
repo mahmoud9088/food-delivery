@@ -1,26 +1,59 @@
-.container, .services .services-container, .about .about1-container, .about .about2-container, .home .home-container, .header .header-container {
+:root {
+  --primary-color: #FDCB35;
+  --text-color:#000;
+  --bg-color:#fff;
+}
+
+.dark-theme {
+  --text-color:#fff;
+  --bg-color: #121212;
+}
+
+.container, .contact .contact-container, .services .services1-container, .services .services2-container, .about .about1-container, .about .about2-container, .home .home-container, .header .header-container {
   display: flex;
   padding: 15px 0;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 72%;
 }
 
-.btn, .home .home-container .home-left .home-btn, .header .header-container .header-btn {
+.btn, .contact .contact-container .contact-btn, .services .services2-container .services-right .app-btns .app-btn, .home .home-container .home-left .home-btn, .header .header-container .header-btn {
   padding: 18px 34px;
   border-radius: 25px;
   border: none;
-  background-color: #FDCB35;
+  background-color: var(--primary-color);
+  font-weight: bold;
 }
 
-.align-container-center, .services, .about, .home, .header {
+.align-container-center, .contact, .services, .about, .home, .header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 10000px;
+  width: 100vw;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  height: 10000px;
+  width: 100vw;
+  transition: all 500ms;
+}
+
 .header {
-  background-color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   width: 100%;
   font-size: 16px;
   font-family: "arial";
@@ -39,7 +72,7 @@
   padding: 0px 22px;
 }
 .header .header-container .header-list .header-item a {
-  color: #000;
+  color: var(--text-color);
   text-decoration: none;
 }
 @media (max-width: 1206px) {
@@ -65,6 +98,7 @@
   padding: 150px 0 0 0;
   flex-wrap: wrap;
   overflow: hidden;
+  color: var(--text-color);
 }
 .home .home-container .home-left .home-title {
   font-size: 48px;
@@ -96,6 +130,7 @@
   }
 }
 .about {
+  color: var(--text-color);
   padding: 120px 0 0 0;
   flex-direction: column;
   flex-wrap: wrap;
@@ -116,72 +151,115 @@
 }
 .about .about1-container .about-right .about-paragraph, .about .about2-container .about-right .about-paragraph {
   font-size: 16px;
-  width: 340px;
+  width: 400px;
   margin-top: 25px;
+  line-height: 2rem;
 }
 .about .about2-container {
   margin-top: 20px;
 }
 
 .services {
+  color: var(--text-color);
   width: 100%;
   padding: 150px 0 0 0;
   flex-wrap: wrap;
   overflow: hidden;
 }
-.services .services-container {
+.services .services1-container {
   flex-direction: column;
 }
-.services .services-container .services-title {
+.services .services1-container .services-title {
   width: 250px;
   font-size: 28px;
   text-align: center;
   margin-bottom: 25px;
 }
-.services .services-container .services-boxes {
+.services .services1-container .services-boxes {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.services .services-container .services-boxes .service-box {
+.services .services1-container .services-boxes .service-box {
   width: 30%;
   padding: 32px 24px;
   text-align: center;
 }
-.services .services-container .services-boxes .service-box .box-title {
+.services .services1-container .services-boxes .service-box .box-title {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.services .services-container .services-boxes .service-box .service-svg {
-  fill: #FDCB35;
+.services .services1-container .services-boxes .service-box .service-svg {
+  fill: var(--primary-color);
   width: 135px;
   margin-bottom: 20px;
 }
-.services .services-container .services-boxes .service-box .box-paragraph {
+.services .services1-container .services-boxes .service-box .box-paragraph {
   font-size: 16px;
   margin-bottom: 20px;
 }
-.services .services-container .services-boxes .service-box .box-btn {
+.services .services1-container .services-boxes .service-box .box-btn {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
   font-size: 16px;
   font-weight: bold;
 }
-
-* {
-  font-family: "Poppins , sans-serif";
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+.services .services2-container {
+  justify-content: space-between;
+}
+.services .services2-container .services-left .app-svg {
+  fill: var(--primary-color);
+  width: 470px;
+}
+.services .services2-container .services-right .app-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.services .services2-container .services-right .app-paragraph {
+  font-size: 16px;
+  width: 340px;
+  margin: 25px 0;
+  line-height: 2rem;
+}
+.services .services2-container .services-right .app-btns .app-btn {
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+}
+.services .services2-container .services-right .app-btns .app-btn .apple-logo, .services .services2-container .services-right .app-btns .app-btn .googleplay-logo {
+  background-image: url("http://127.0.0.1:5500/assets/img/Apple_logo_black.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+.services .services2-container .services-right .app-btns .app-btn .googleplay-logo {
+  background-image: url("http://127.0.0.1:5500/assets/img/Google-Play-512.png");
 }
 
-html {
-  height: 10000px;
-  width: 100vw;
+.contact {
+  color: var(--text-color);
+  padding: 120px 0 0 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
-
-body {
-  height: 10000px;
-  width: 100vw;
+.contact .contact-container .contact-col1 {
+  width: 40%;
+}
+.contact .contact-container .contact-col1 .col1-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.contact .contact-container .contact-col1 .col1-paragraph {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 2rem;
+}
+.contact .contact-container .contact-col2 .col2-paragraph {
+  margin-bottom: 15px;
+}
+.contact .contact-container .contact-col2 .col2-paragraph span {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

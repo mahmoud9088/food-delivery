@@ -8,6 +8,7 @@
     padding:150px 0 0 0;
     flex-wrap: wrap;
     overflow:hidden;
+    color:var(--text-color);
     .home-container{
         @extend .container;
         $avg_direction : 'right';

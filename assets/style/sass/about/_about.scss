@@ -3,6 +3,7 @@
 
 .about{ 
     @extend .align-container-center;
+    color:var(--text-color);
     padding:120px 0 0 0;
     flex-direction: column;
     flex-wrap: wrap;
@@ -28,8 +29,10 @@
             }
             .about-paragraph{
                 font-size: 16px;
-                width:340px;
+                width:400px;
                 margin-top: 25px;
+                line-height: 2rem;
+
 
             }
 

@@ -1,3 +1,15 @@
+
+:root{
+    --primary-color: #FDCB35;
+    --text-color:#000;
+    --bg-color:#fff;
+};
+
+.dark-theme{
+    --text-color:#fff;
+    --bg-color: #121212;
+}
+
 $button_color: #FDCB35;
 $avg_direction : '';
 $text_direction : '' ;
@@ -8,7 +20,7 @@ $text_direction : '' ;
         padding:15px 0;
         justify-content: space-between;
         align-items: center;
-        width:75%;
+        width:72%;
         
 }
 
@@ -16,7 +28,8 @@ $text_direction : '' ;
     padding:18px 34px;
     border-radius: 25px;
     border:none;
-    background-color: $button_color
+    background-color: var(--primary-color);
+    font-weight: bold;
 }
 
 .align-container-center{

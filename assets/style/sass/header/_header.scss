@@ -1,6 +1,7 @@
 @use '../variables/variables' as *;
 .header{
-    background-color: white;
+    background-color: var(--bg-color);
+    color:var(--text-color);
     width:100%;
     font-size: 16px;
     font-family: "arial";
@@ -19,7 +20,7 @@
             .header-item{
                 padding: 0px 22px;
                 a {
-                    color: #000;
+                    color:var(--text-color);
                     text-decoration: none;
                 }
             }

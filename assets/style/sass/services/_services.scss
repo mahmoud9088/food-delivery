@@ -2,12 +2,13 @@
 @use '../variables/variables' as *;
 
 .services{
+    color:var(--text-color);
     width:100%;
     @extend .align-container-center;
     padding:150px 0 0 0;
     flex-wrap: wrap;
     overflow:hidden;
-    .services-container{
+    .services1-container{
         @extend .container;
         flex-direction: column;
         .services-title{
@@ -30,7 +31,7 @@
                     margin-bottom: 20px;
                 }
                 .service-svg{
-                    fill : $button_color;
+                    fill : var(--primary-color);
                     width:135px;
                     margin-bottom: 20px;
                 }
@@ -41,11 +42,60 @@
                 }
                 .box-btn{
                     text-decoration: none;
-                    color:#000;
+                    color:var(--text-color);
                     font-size:16px ;
                     font-weight: bold;
                 }
             }
         }
+    }
+    .services2-container{
+        @extend .container;
+        justify-content:space-between;
+        .services-left{
+            .app-svg{
+                fill : var(--primary-color);
+                width:470px;
+            }
+        }
+        .services-right{
+            // margin-left: 180px;
+            .app-title{
+                font-size:28px;
+                margin-bottom: 10px;
+            }
+            .app-paragraph{
+                font-size: 16px;
+                width:340px;
+                margin: 25px 0;
+                line-height: 2rem;
+
+            }
+            .app-btns{      
+                .app-btn{
+                    @extend .btn;
+                    display: inline-flex;
+                    overflow: hidden;
+                    align-items: center;
+                    .apple-logo{
+                        background-image: url('http://127.0.0.1:5500/assets/img/Apple_logo_black.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width:25px;
+                        height:25px;
+                        margin-right: 15px;
+    
+                    }
+                    
+                    .googleplay-logo{
+                        @extend .apple-logo;
+                        background-image: url('http://127.0.0.1:5500/assets/img/Google-Play-512.png');
+                        
+                    }
+                }
+            }
+
+        }
+        
     }
 }

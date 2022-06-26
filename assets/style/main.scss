@@ -2,6 +2,8 @@
 @use './sass/variables/variables' as *;
 // import fonts
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+// import base
+@use './sass/base/base';
 // import header
 @use './sass/header/header';
 // import home 
@@ -10,20 +12,6 @@
 @use './sass/about/about';
 // import services
 @use './sass/services/services';
+// import contact
+@use './sass/contact/contact';
 
-* {
-    font-family:'Poppins , sans-serif';
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-html{
-    height:10000px;
-    width:100vw;
-}
-body{
-    height:10000px;
-    width:100vw;
-    //background-color: aqua;
-}

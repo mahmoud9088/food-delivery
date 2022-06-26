@@ -1,0 +1,40 @@
+// import variables
+@use '../variables/variables' as *;
+.contact{
+    @extend .align-container-center;
+    color:var(--text-color);
+    padding:120px 0 0 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow:hidden;
+    .contact-container{
+        @extend .container;
+        .contact-col1{
+            width:40%;
+            .col1-title{
+                font-size:28px;
+                margin-bottom: 10px;
+                
+
+            }
+            .col1-paragraph{
+                margin-top: 25px;
+                font-size: 16px;   
+                line-height: 2rem;
+            }
+        }
+        .contact-col2{
+            .col2-paragraph{
+                margin-bottom: 15px;
+                span{
+                    font-weight:bold;
+                }
+            }
+            
+        }
+        .contact-btn{
+            @extend .btn;
+        }
+    }
+
+}
