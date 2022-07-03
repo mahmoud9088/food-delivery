@@ -3,7 +3,7 @@
 .contact{
     @extend .align-container-center;
     color:var(--text-color);
-    padding:120px 0 0 0;
+    padding-top:120px;
     flex-direction: column;
     flex-wrap: wrap;
     overflow:hidden;
@@ -12,14 +12,14 @@
         .contact-col1{
             width:40%;
             .col1-title{
-                font-size:28px;
+                font-size:var(--title-size2);
                 margin-bottom: 10px;
                 
 
             }
             .col1-paragraph{
                 margin-top: 25px;
-                font-size: 16px;   
+                font-size: var(--paragraph-size);   
                 line-height: 2rem;
             }
         }

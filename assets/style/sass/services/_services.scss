@@ -5,29 +5,34 @@
     color:var(--text-color);
     width:100%;
     @extend .align-container-center;
-    padding:150px 0 0 0;
+    padding-top:100px;
     flex-wrap: wrap;
     overflow:hidden;
     .services1-container{
         @extend .container;
+        margin-bottom: 150px;
         flex-direction: column;
         .services-title{
-            width:250px;
-            font-size: 28px;
+            width:15.6rem;
+            font-size: var(--title-size2);
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 1.5rem;
         }
         .services-boxes{
             width:100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             .service-box{
                 width:30%;
-                padding:32px 24px;
+                padding:1.5rem 2rem;
+                margin-bottom: 1.5rem;
                 text-align: center;
-
+                border-radius: 10px;
+                background-color: var(--box-bg);
+                box-shadow: rgba(77, 57, 0, 0.15) 0px 2px 6px 0px;
                 .box-title{
-                    font-size: 18px;
+                    font-size: var(--title-size3);
                     margin-bottom: 20px;
                 }
                 .service-svg{
@@ -36,14 +41,14 @@
                     margin-bottom: 20px;
                 }
                 .box-paragraph{
-                    font-size: 16px;
+                    font-size: var(--paragraph-size);
                     margin-bottom: 20px;
 
                 }
                 .box-btn{
                     text-decoration: none;
                     color:var(--text-color);
-                    font-size:16px ;
+                    font-size:var(--paragraph-size) ;
                     font-weight: bold;
                 }
             }
@@ -51,22 +56,24 @@
     }
     .services2-container{
         @extend .container;
+        margin-bottom: 0px;
         justify-content:space-between;
         .services-left{
+            width:50%;
             .app-svg{
                 fill : var(--primary-color);
-                width:470px;
+                width:var(--svg-width);
             }
         }
         .services-right{
-            // margin-left: 180px;
+            width:50%;
+            margin-left: 10px;
             .app-title{
-                font-size:28px;
+                font-size:var(--title-size2);
                 margin-bottom: 10px;
             }
             .app-paragraph{
-                font-size: 16px;
-                width:340px;
+                font-size: var(--paragraph-size);
                 margin: 25px 0;
                 line-height: 2rem;
 
@@ -77,19 +84,20 @@
                     display: inline-flex;
                     overflow: hidden;
                     align-items: center;
+                    padding:12px 10px;
                     .apple-logo{
-                        background-image: url('http://127.0.0.1:5500/assets/img/Apple_logo_black.png');
+                        background-image: url('/assets/img/Apple_logo_black.png');
                         background-repeat: no-repeat;
                         background-size: contain;
                         width:25px;
                         height:25px;
-                        margin-right: 15px;
+                        margin-right: 5px;
     
                     }
                     
                     .googleplay-logo{
                         @extend .apple-logo;
-                        background-image: url('http://127.0.0.1:5500/assets/img/Google-Play-512.png');
+                        background-image: url('/assets/img/Google-Play-512.png');
                         
                     }
                 }

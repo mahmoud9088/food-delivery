@@ -1,0 +1,199 @@
+@media screen and (max-width:1125px) {
+    html{
+        font-size: 14px;
+    }  
+}
+
+@media screen and (max-width:914px){
+    html{
+        font-size: 13px;
+    }
+}
+@media(max-width:800px){
+    .header{
+        .header-container{
+            .header-btn{
+            display: none;
+        }
+    }}
+
+}
+
+@media screen and (max-width:760px){
+    html{
+        font-size: 12px;
+    }
+    .services{
+        .services1-container{
+            .services-boxes{
+                  justify-content:center ;
+
+                .service-box{
+                    width:45%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    html{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:610px){
+    html{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:570px){
+    .header{
+        .header-container{
+            display:block;
+            position:relative;
+            .header-list {
+            display: none;
+            text-align: center;
+            .header-item{
+                padding:10px 0;
+                border-bottom: 1px solid #444;
+                transition: all 3000ms ease-in-out;
+            }        
+        }       
+            .hamburger-menu{
+                display:block;
+                position:absolute;
+                top:2px;
+                right:0;
+                .menu{
+                    svg{
+                        width:50px;
+                        height:50px;
+                    }                 
+                }
+            }     
+    }}
+    .home{
+        padding-top:80px;
+        .home-container{
+            flex-direction: column-reverse;
+            justify-content: center;      
+            .home-left{
+                width:75%;
+                margin-top: 3rem;
+                .home-title{
+                margin-bottom: 0.8rem;
+                }
+                .home-paragraph{
+                    width:100%;
+                }
+            }
+            .home-right{
+                width:75%;
+            }
+        }
+    }
+    .about{
+        padding-top:70px;
+        text-align: center;
+        .about1-container {
+            margin-bottom: 70px;
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap:50px;
+            .about-left{
+                width:75%;         
+            }  
+            .about-right{
+                width:100%;
+                .about-title{
+                    margin-bottom: 10px;
+                }
+                .about-paragraph{
+                    width:100%;
+                }
+            }
+        }
+        
+            .about2-container {
+                flex-direction: column;
+                justify-content: center;  
+                .about-left{
+                    width:75%;         
+                }  
+                .about-right{
+                    width:100%;
+                    .about-title{
+                        margin-bottom: 10px;
+                    }
+                    .about-paragraph{
+                        width:100%;
+                    }
+                }
+            }        
+            }
+        .services{
+            padding-top:70px;
+            text-align: center;
+            .services1-container{
+                margin-bottom: 70px;
+                
+                .services-boxes{
+                      justify-content:center ;
+                    .service-box{
+                        width:80%;
+                    }
+                }
+            }
+            .services2-container{
+                flex-direction: column-reverse;
+                justify-content: center; 
+                .services-left{
+                    width:75%;
+                }
+                .services-right{
+                    width:100%;
+                    margin:0 0 30px 0;
+                    .app-paragraph{
+                        width:100%;
+                    }
+                }
+            }
+        }
+        .contact{
+            padding-top:70px;
+            .contact-container{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .contact-col1 , .contact-col3 {
+                    width:100%;
+                }
+                .contact-col2{
+                    text-align: left;
+                    margin-top: auto;
+                    padding: 20px;
+                    
+
+                }
+                
+
+            }
+        }
+}
+
+@media screen and (min-width:571px) {
+    .header{
+        .header-container{
+            .header-list {
+            display: flex !important;            
+        }                 
+    }}
+}
+
+
+
+

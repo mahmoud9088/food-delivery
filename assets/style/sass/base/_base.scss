@@ -5,14 +5,14 @@
     scroll-behavior: smooth;
 }
 html{
-    height:10000px;
-    width:100vw;
+    font-size: 16px;
+
 }
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
     height:10000px;
     width:100vw;
-    transition: all 500ms;
+    transition: all 1s;
     
 }
