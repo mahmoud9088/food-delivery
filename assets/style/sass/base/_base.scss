@@ -11,8 +11,11 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
-    height:10000px;
     width:100vw;
     transition: all 1s;
+    overflow-x: hidden;
     
+}
+ul{
+    list-style: none;
 }

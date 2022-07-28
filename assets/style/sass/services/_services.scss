@@ -85,21 +85,11 @@
                     overflow: hidden;
                     align-items: center;
                     padding:12px 10px;
-                    .apple-logo{
-                        background-image: url('/assets/img/Apple_logo_black.png');
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        width:25px;
-                        height:25px;
+                    .apple-logo ,  .googleplay-logo {
                         margin-right: 5px;
     
                     }
                     
-                    .googleplay-logo{
-                        @extend .apple-logo;
-                        background-image: url('/assets/img/Google-Play-512.png');
-                        
-                    }
                 }
             }
 

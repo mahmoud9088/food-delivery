@@ -7,6 +7,7 @@
   --title-size3: 1.13rem;
   --paragraph-size: 1rem;
   --box-bg:#fff;
+  --footer-bg:#FEE59A;
   --svg-width:100%;
   --text-container:50%;
   --container-width:72%;
@@ -30,9 +31,10 @@
   --text-color:#fff;
   --bg-color: #121212;
   --box-bg:#2C2A26;
+  --footer-bg:#2C2A26;
 }
 
-.container, .contact .contact-container, .services .services1-container, .services .services2-container, .about .about1-container, .about .about2-container, .home .home-container, .header .header-container {
+.container, .footer .footer-container, .contact .contact-container, .services .services1-container, .services .services2-container, .about .about1-container, .about .about2-container, .home .home-container, .header .header-container {
   display: flex;
   padding: 15px 0;
   justify-content: space-between;
@@ -48,7 +50,7 @@
   font-weight: bold;
 }
 
-.align-container-center, .contact, .services, .about, .home, .header {
+.align-container-center, .footer, .contact, .services, .about, .home, .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,9 +70,13 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
-  height: 10000px;
   width: 100vw;
   transition: all 1s;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
 }
 
 .header {
@@ -95,6 +101,9 @@ body {
 .header .header-container .header-list .header-item a {
   color: var(--text-color);
   text-decoration: none;
+}
+.header .header-container .header-list .header-item:hover {
+  cursor: pointer;
 }
 .header .header-container .header-list .active-section {
   position: relative;
@@ -299,20 +308,13 @@ body {
   padding: 12px 10px;
 }
 .services .services2-container .services-right .app-btns .app-btn .apple-logo, .services .services2-container .services-right .app-btns .app-btn .googleplay-logo {
-  background-image: url("/assets/img/Apple_logo_black.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 25px;
-  height: 25px;
   margin-right: 5px;
-}
-.services .services2-container .services-right .app-btns .app-btn .googleplay-logo {
-  background-image: url("/assets/img/Google-Play-512.png");
 }
 
 .contact {
   color: var(--text-color);
   padding-top: 120px;
+  padding-bottom: 60px;
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
@@ -335,6 +337,39 @@ body {
 .contact .contact-container .contact-col2 .col2-paragraph span {
   font-weight: bold;
 }
+.footer {
+  color: var(--text-color);
+  background-color: var(--footer-bg);
+  padding-top: 100px;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.footer .footer-container {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer .footer-container .footer-col1, .footer .footer-container .footer-col2, .footer .footer-container .footer-col4, .footer .footer-container .footer-col3 {
+  width: 190px;
+}
+.footer .footer-container .footer-col1 .col-title, .footer .footer-container .footer-col2 .col-title, .footer .footer-container .footer-col4 .col-title, .footer .footer-container .footer-col3 .col-title {
+  margin-bottom: 14px;
+}
+.footer .footer-container .footer-col2 .col-list li, .footer .footer-container .footer-col4 .col-list li, .footer .footer-container .footer-col3 .col-list li {
+  padding: 5px 0;
+}
+.footer .footer-container .footer-col3 .col-list li {
+  padding: 5px 0;
+}
+.footer .footer-container .footer-col5 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
 @media screen and (max-width: 1125px) {
   html {
     font-size: 14px;
@@ -354,9 +389,9 @@ body {
   html {
     font-size: 12px;
   }
-
   .services .services1-container .services-boxes {
     justify-content: center;
+    gap: 20px;
   }
   .services .services1-container .services-boxes .service-box {
     width: 45%;
@@ -396,7 +431,6 @@ body {
     width: 50px;
     height: 50px;
   }
-
   .home {
     padding-top: 80px;
   }
@@ -417,7 +451,6 @@ body {
   .home .home-container .home-right {
     width: 75%;
   }
-
   .about {
     padding-top: 70px;
     text-align: center;
@@ -456,7 +489,6 @@ body {
   .about .about2-container .about-right .about-paragraph {
     width: 100%;
   }
-
   .services {
     padding-top: 70px;
     text-align: center;
@@ -484,7 +516,6 @@ body {
   .services .services2-container .services-right .app-paragraph {
     width: 100%;
   }
-
   .contact {
     padding-top: 70px;
   }

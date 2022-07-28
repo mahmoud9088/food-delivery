@@ -22,11 +22,13 @@
                     color:var(--text-color);
                     text-decoration: none;
                     
+                };
+                &:hover{
+                  cursor: pointer;
                 }
-                
-                
-                
+                     
             }
+            
             .active-section{
                 position:relative;
                 &::after{

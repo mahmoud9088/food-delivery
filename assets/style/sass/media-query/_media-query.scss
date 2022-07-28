@@ -27,19 +27,21 @@
         .services1-container{
             .services-boxes{
                   justify-content:center ;
-
+                  gap:20px;
                 .service-box{
                     width:45%;
                 }
             }
         }
     }
+    
 }
 
 @media screen and (max-width:650px){
     html{
         font-size: 11px;
     }
+   
 }
 @media screen and (max-width:610px){
     html{

@@ -1,0 +1,55 @@
+// import variables
+@use '../variables/variables' as *;
+.footer{
+    @extend .align-container-center;
+    color:var(--text-color);
+    background-color: var(--footer-bg);
+    padding-top:100px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    overflow:hidden;
+    .footer-container{
+        @extend .container;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap:20px;
+        .footer-col1{
+           width:190px;
+           .col-title{
+            margin-bottom:14px;
+           }
+        }
+        .footer-col2{
+           @extend .footer-col1;
+           
+           .col-list{
+            li{
+                padding:5px 0;
+            }
+           }
+            
+        }
+        .footer-col3{
+            @extend .footer-col2;
+            .col-list{
+                li{
+                    padding:5px 0;
+                }
+               }
+             
+         }
+         .footer-col4{
+            @extend .footer-col2;
+             
+         }
+        .footer-col5{
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-start;
+            gap:20px;
+        }
+        
+    }
+
+}
